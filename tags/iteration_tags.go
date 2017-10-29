@@ -197,10 +197,10 @@ func makeIterator(value interface{}) iterable {
 		return sliceWrapper(reflect.ValueOf(value))
 	case reflect.Map:
 		rv := reflect.ValueOf(value)
-		array := make([][]interface{}, rv.Len())
+		array := make([]interface{}, rv.Len()) // Only return value when iterating
 		for i, k := range rv.MapKeys() {
 			v := rv.MapIndex(k)
-			array[i] = []interface{}{k.Interface(), v.Interface()}
+			array[i] = v.Interface() // Only return value when iterating
 		}
 		return sliceWrapper(reflect.ValueOf(array))
 	default:
