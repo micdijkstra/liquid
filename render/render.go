@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/osteele/liquid/values"
+	"github.com/micdijkstra/liquid/values"
 )
 
 // Render renders the render tree.

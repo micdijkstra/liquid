@@ -14,8 +14,8 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/osteele/liquid/values"
-	"github.com/osteele/tuesday"
+	"github.com/micdijkstra/liquid/values"
+	"github.com/micdijkstra/tuesday"
 )
 
 // A FilterDictionary holds filters.

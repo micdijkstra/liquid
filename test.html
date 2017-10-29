@@ -43,10 +43,10 @@
 			Package liquid is a pure Go implementation of Shopify Liquid templates.
 		</p>
 		<p>
-			It&#39;s intended for use in for use in <a href="https://github.com/osteele/gojekyll">https://github.com/osteele/gojekyll</a>.
+			It&#39;s intended for use in for use in <a href="https://github.com/micdijkstra/gojekyll">https://github.com/micdijkstra/gojekyll</a>.
 		</p>
 		<p>
-			See the project README <a href="https://github.com/osteele/liquid">https://github.com/osteele/liquid</a> for additional
+			See the project README <a href="https://github.com/micdijkstra/liquid">https://github.com/micdijkstra/liquid</a> for additional
 			information and implementation status.
 		</p>
 
@@ -192,7 +192,7 @@ fmt.Println(out)
 
 <pre>type Engine interface {
     RegisterFilter(name <a href="/pkg/builtin/#string">string</a>, fn interface{})
-    RegisterTag(<a href="/pkg/builtin/#string">string</a>, func(form <a href="/pkg/builtin/#string">string</a>) (func(<a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, <a href="/pkg/github.com/osteele/liquid/chunks/">chunks</a>.<a href="/pkg/github.com/osteele/liquid/chunks/#Context">Context</a>) <a href="/pkg/builtin/#error">error</a>, <a href="/pkg/builtin/#error">error</a>))
+    RegisterTag(<a href="/pkg/builtin/#string">string</a>, func(form <a href="/pkg/builtin/#string">string</a>) (func(<a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, <a href="/pkg/github.com/micdijkstra/liquid/chunks/">chunks</a>.<a href="/pkg/github.com/micdijkstra/liquid/chunks/#Context">Context</a>) <a href="/pkg/builtin/#error">error</a>, <a href="/pkg/builtin/#error">error</a>))
 
     ParseTemplate(text []<a href="/pkg/builtin/#byte">byte</a>) (<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)
     ParseAndRender(text []<a href="/pkg/builtin/#byte">byte</a>, bindings map[<a href="/pkg/builtin/#string">string</a>]interface{}) ([]<a href="/pkg/builtin/#byte">byte</a>, <a href="/pkg/builtin/#error">error</a>)
@@ -229,7 +229,7 @@ fmt.Println(out)
 	<a class="permalink" href="#TagDefinition">&#xb6;</a>
 </h2>
 
-<pre>type TagDefinition func(expr <a href="/pkg/builtin/#string">string</a>) (func(<a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, <a href="/pkg/github.com/osteele/liquid/chunks/">chunks</a>.<a href="/pkg/github.com/osteele/liquid/chunks/#Context">Context</a>) <a href="/pkg/builtin/#error">error</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>type TagDefinition func(expr <a href="/pkg/builtin/#string">string</a>) (func(<a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, <a href="/pkg/github.com/micdijkstra/liquid/chunks/">chunks</a>.<a href="/pkg/github.com/micdijkstra/liquid/chunks/#Context">Context</a>) <a href="/pkg/builtin/#error">error</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
 
 
 

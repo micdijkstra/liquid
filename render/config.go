@@ -1,7 +1,7 @@
 package render
 
 import (
-	"github.com/osteele/liquid/parser"
+	"github.com/micdijkstra/liquid/parser"
 )
 
 // Config holds configuration information for parsing and rendering.

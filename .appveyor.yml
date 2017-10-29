@@ -1,6 +1,6 @@
 version: 0.2.0.{build}
 
-clone_folder: C:\GOPATH\src\github.com\osteele\liquid
+clone_folder: C:\GOPATH\src\github.com\micdijkstra\liquid
 
 environment:
   GOPATH: C:\GOPATH

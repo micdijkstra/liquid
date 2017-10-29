@@ -8,7 +8,7 @@
  [![][license-svg]][license-url]
 
 `liquid` is a pure Go implementation of [Shopify Liquid templates](https://shopify.github.io/liquid).
-It was developed for use in the [Gojekyll](https://github.com/osteele/gojekyll) port of the Jekyll static site generator.
+It was developed for use in the [Gojekyll](https://github.com/micdijkstra/gojekyll) port of the Jekyll static site generator.
 
 <!-- TOC -->
 
@@ -41,20 +41,20 @@ Drops have a different design from the Shopify (Ruby) implementation.
 A Ruby drop sets `liquid_attributes` to a list of attributes that are exposed to Liquid.
 A Go drop implements `ToLiquid() interface{}`, that returns a proxy object.
 Conventionally, the proxy is a `map` or `struct` that defines the exposed properties.
-See <http://godoc.org/github.com/osteele/liquid#Drop> for additional information.
+See <http://godoc.org/github.com/micdijkstra/liquid#Drop> for additional information.
 
 ## Stability
 
 This library is at an early stage of development.
 It has been mostly used by its author.
 
-Only the liquid package itself, and the sub-package types that are used in that top-level package, are guaranteed stable. For example, `render.Context` is documented as the parameter type for tag definitions; it therefore won't change incompatibly, if ever, until at least version 2 (at which point `gopkg.in/osteele/liquid.v1` will continue to pin to the v1 implementation).
+Only the liquid package itself, and the sub-package types that are used in that top-level package, are guaranteed stable. For example, `render.Context` is documented as the parameter type for tag definitions; it therefore won't change incompatibly, if ever, until at least version 2 (at which point `gopkg.in/micdijkstra/liquid.v1` will continue to pin to the v1 implementation).
 
 ## Install
 
-`go get gopkg.in/osteele/liquid.v1` # latest snapshot
+`go get gopkg.in/micdijkstra/liquid.v1` # latest snapshot
 
-`go get -u github.com/osteele/liquid` # development version
+`go get -u github.com/micdijkstra/liquid` # development version
 
 ## Usage
 
@@ -74,7 +74,7 @@ fmt.Println(out)
 
 ### Command-Line tool
 
-`go install gopkg.in/osteele/liquid.v0/cmd/liquid` installs a command-line `liquid` executable.
+`go install gopkg.in/micdijkstra/liquid.v0/cmd/liquid` installs a command-line `liquid` executable.
 This is intended to make it easier to create test cases for bug reports.
 
 ```bash
@@ -161,20 +161,20 @@ The [original Liquid engine](https://shopify.github.io/liquid), of course, for t
 
 MIT License
 
-[coveralls-url]: https://coveralls.io/r/osteele/liquid?branch=master
-[coveralls-svg]: https://img.shields.io/coveralls/osteele/liquid.svg?branch=master
+[coveralls-url]: https://coveralls.io/r/micdijkstra/liquid?branch=master
+[coveralls-svg]: https://img.shields.io/coveralls/micdijkstra/liquid.svg?branch=master
 
-[godoc-url]: https://godoc.org/github.com/osteele/liquid
-[godoc-svg]: https://godoc.org/github.com/osteele/liquid?status.svg
+[godoc-url]: https://godoc.org/github.com/micdijkstra/liquid
+[godoc-svg]: https://godoc.org/github.com/micdijkstra/liquid?status.svg
 
-[license-url]: https://github.com/osteele/liquid/blob/master/LICENSE
+[license-url]: https://github.com/micdijkstra/liquid/blob/master/LICENSE
 [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[go-report-card-url]: https://goreportcard.com/report/github.com/osteele/liquid
-[go-report-card-svg]: https://goreportcard.com/badge/github.com/osteele/liquid
+[go-report-card-url]: https://goreportcard.com/report/github.com/micdijkstra/liquid
+[go-report-card-svg]: https://goreportcard.com/badge/github.com/micdijkstra/liquid
 
-[travis-url]: https://travis-ci.org/osteele/liquid
-[travis-svg]: https://img.shields.io/travis/osteele/liquid.svg?branch=master
+[travis-url]: https://travis-ci.org/micdijkstra/liquid
+[travis-svg]: https://img.shields.io/travis/micdijkstra/liquid.svg?branch=master
 
-[appveyor-url]: https://ci.appveyor.com/project/osteele/liquid
+[appveyor-url]: https://ci.appveyor.com/project/micdijkstra/liquid
 [appveyor-svg]: https://ci.appveyor.com/api/projects/status/76tnj36879n671jx?svg=true
